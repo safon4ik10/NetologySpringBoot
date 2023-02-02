@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-EXPOSE 8080
+EXPOSE 8081
 
 ADD target/NetologySpringBoot-0.0.1-SNAPSHOT.jar app1.jar
 

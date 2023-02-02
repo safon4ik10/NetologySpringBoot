@@ -18,11 +18,10 @@ class NetologySpringBootApplicationTests {
     @Autowired
     TestRestTemplate restTemplate;
 
-    @Container
-    private static final GenericContainer<?> devContainer = new GenericContainer<>("devapp:latest")
+    private static final GenericContainer<?> devContainer = new GenericContainer<>("devapp")
             .withExposedPorts(8080);
-    @Container
-    private static final GenericContainer<?> prodContainer = new GenericContainer<>("prodapp:latest")
+
+    private static final GenericContainer<?> prodContainer = new GenericContainer<>("prodapp")
             .withExposedPorts(8081);
 
     @BeforeAll
